@@ -1,3 +1,4 @@
+
 dist: bionic
 
 language:
@@ -8,12 +9,10 @@ before_install:
 
 addons:
   sonarcloud:
-    organization: "danilakostin"
-    token:
-      secure: da01353b959791cb2c968357f88438ddf70bcafe # encrypted value of your token
+    organization: "bloody-azimus"
+    token: $SONAR_TOKEN
 
 script:
-
   - qmake
   - make
   - ./tests/tests
