@@ -8,10 +8,12 @@ before_install:
 
 addons:
   sonarcloud:
-    organization: "DanilaKostin"
-    token: $SONAR_TOKEN
+    organization: "danilakostin"
+    token:
+      secure: da01353b959791cb2c968357f88438ddf70bcafe # encrypted value of your token
 
 script:
+
   - qmake
   - make
   - ./tests/tests
