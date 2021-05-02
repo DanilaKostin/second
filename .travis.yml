@@ -1,4 +1,6 @@
-dist: bionic
+
+os: linux
+dist: xenial
 
 language:
   - cpp
@@ -8,8 +10,7 @@ before_install:
 
 addons:
   sonarcloud:
-    organization: "DanilaKostin"
-    token: $SONAR_TOKEN
+    organization: "danilakostin"
 
 script:
   - qmake
@@ -17,10 +18,14 @@ script:
   - ./tests/tests
 
 after_success:
-  - make clean
   - coveralls --root . -E ".*external.*" -E ".*tests.*"
   - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
-  - sonar-scanner -Dsonar.cfamily.build-wrapper-output=bw-output
+  - sonar-scanner
+
+cache:
+  directories:
+  - '$HOME/.m2/repository'
+  - '$HOME/.sonar/cache'
 
 notifications:
   email: false
