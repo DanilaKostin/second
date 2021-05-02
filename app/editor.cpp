@@ -22,7 +22,7 @@ int main()
         printf("\ned > ");
 
 	   
-        (void)fgets(cmdline, MAXLINE, stdin);
+        if(fgets(cmdline, MAXLINE, stdin)){};
 
 
         if ((cmd = strtok(cmdline, " \n")) == NULL) {
