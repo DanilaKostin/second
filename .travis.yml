@@ -8,7 +8,7 @@ before_install:
 
 addons:
   sonarcloud:
-    organization: "danilakostin"
+    organization: "DanilaKostin"
     token: $SONAR_TOKEN
 
 script:
