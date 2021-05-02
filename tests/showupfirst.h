@@ -66,7 +66,7 @@ TEST(Showupfirst, negative_no_lines)
     showupfirst(txt);
     std::string text = testing::internal::GetCapturedStdout();
 
-    EXPECT_EQ(text.length(), 0);
+    EXPECT_EQ((int)text.length(), 0);
 
     free(txt);
 }
