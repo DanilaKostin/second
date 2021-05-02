@@ -1404,7 +1404,7 @@ AssertionResult CmpHelperEQ(const char* lhs_expression,
                             const char* rhs_expression,
                             const T1& lhs,
                             const T2& rhs) {
-  if (lhs == rhs) {
+  if (lhs == (int)rhs) {
     return AssertionSuccess();
   }
 
