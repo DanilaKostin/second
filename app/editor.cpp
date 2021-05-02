@@ -21,7 +21,8 @@ int main()
     while (1) {
         printf("\ned > ");
 
-        fgets(cmdline, MAXLINE, stdin);
+	   
+        (void)fgets(cmdline, MAXLINE, stdin);
 
 
         if ((cmd = strtok(cmdline, " \n")) == NULL) {
