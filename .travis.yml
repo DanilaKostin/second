@@ -9,8 +9,8 @@ before_install:
 
 addons:
   sonarcloud:
-    organization: "bloody-azimus"
-    token: $SONAR_TOKEN
+    organization: "danilakostin"
+    token: ${SONAR_TOKEN}
 
 script:
   - qmake
