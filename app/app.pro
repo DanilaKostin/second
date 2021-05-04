@@ -12,7 +12,6 @@ SOURCES += load.cpp \
     process_forward.cpp \
     r1ne.cpp \
     remove_all.cpp \
-    set_cursor.cpp \
     showupfirst.cpp \
     show.cpp \
     save.cpp \
