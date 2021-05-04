@@ -27,7 +27,7 @@ static void show_upper(int index, char *contents, int cursor, void *data)
 
     printf("%c", toupper(contents[0]));
     unsigned long i = 1;
-    while (i != strlen(contents)-1)
+    while (i != strnlen(contents,100)-1)
     {
         if (contents[i-1] == ' ')
             printf("%c", toupper(contents[i]));
