@@ -35,7 +35,7 @@ static void show_upper(int index, char *contents, int cursor, void *data)
         printf("%c", contents[i]);
         i++;
     }
-    if (contents[strlen(contents)-1] == ' ')
-        printf("%c", toupper(contents[strlen(contents)]));
+    if (contents[strnlen(contents,100)-1] == ' ')
+        printf("%c", toupper(contents[strnlen(contents,100)]));
     else printf("%c", contents[i]);
 }
