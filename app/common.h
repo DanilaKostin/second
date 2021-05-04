@@ -38,6 +38,6 @@ void load(text txt, string filename);
 void showupfirst(text txt);
 
 const string CURSOR_CHAR = "|";
-
+ char* set_cursor(char* contents, int cursor);
 
 #endif
