@@ -15,6 +15,7 @@ SOURCES += load.cpp \
     showupfirst.cpp \
     show.cpp \
     save.cpp \
+    set_cursor.cpp \
 
 HEADERS += \
         text.h \
