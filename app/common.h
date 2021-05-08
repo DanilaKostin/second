@@ -37,7 +37,5 @@ void load(text txt, string filename);
 //void showreveven(text txt);
 void showupfirst(text txt);
 
-const string CURSOR_CHAR = "|";
- char* set_cursor(char* contents, int cursor);
 
 #endif
