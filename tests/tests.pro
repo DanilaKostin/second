@@ -18,7 +18,6 @@ SOURCES += main.cpp \
     ../app/save.cpp \
     ../app/load.cpp \
     ../app/show.cpp \
-    ../app/set_cursor.cpp \
     ../app/create_text.cpp \
     ../app/process_forward.cpp \
     ../app/remove_all.cpp \
