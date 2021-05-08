@@ -9,6 +9,6 @@
 void append_line(const text txt, string contents)
 {
     txt->lines->push_back(contents);
-    txt->cursor->position = contents.size();
-    txt->cursor->line_num = txt->lines->size() - 1;
+    txt->cursor->position = (unsigned int)contents.size();
+    txt->cursor->line_num = (unsigned int)txt->lines->size() - 1;
 }
