@@ -31,7 +31,9 @@ TEST(Save, positive)
 
     for(unsigned int i = 0; i < start->lines->size(); i++)
         EXPECT_STREQ(compare_1[i].c_str(), compare_2[i].c_str());
-
+    
+    remove_all(start);
+    remove_all(final);
     free(start);
     free(final);
 }
